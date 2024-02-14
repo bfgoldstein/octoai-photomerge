@@ -33,7 +33,7 @@
     },
     "Frosted": {
         "payload": {
-            "prompt": "FrostedStyle, up close photo of a fierce and beautiful snow royal trigger, blue and white hair, frosted lips, wearing a frozen transparent glass fur coat, beautiful detailed high quality crown, realistic eyes, up close, bokeh, 4k, HDR",
+            "prompt": "FrostedStyle, up close photo of a fierce and beautiful snow person trigger, blue and white hair, frosted lips, wearing a frozen transparent glass fur coat, beautiful detailed high quality crown, realistic eyes, up close, bokeh, 4k, HDR",
             "negative_prompt": "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
             "checkpoint": "RealVisXL",
             "loras": {
