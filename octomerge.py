@@ -17,6 +17,25 @@ OCTOAI_TOKEN = os.environ["OCTOAI_TOKEN"]
 # OctoAI client
 oai_client = Client(OCTOAI_TOKEN)
 
+def crop_image(image, size=512):
+    width, height = image.size
+    if width < height:
+        newWidth = size
+        newHeight = int(height / (width / size))
+        cropTop = (newHeight - size) // 2
+        cropBottom = cropTop + size
+        crop = (0, cropTop, size, cropBottom)
+    else:
+        newHeight = size
+        newWidth = int(width / (height / size))
+        cropLeft = (newWidth - size) // 2
+        cropRight = cropLeft + size
+        crop = (cropLeft, 0, cropRight, size)
+    imResize = image.resize((newWidth, newHeight))
+    imCrop = imResize.crop(crop)
+
+    return imCrop
+
 def read_image(image):
     buffer = BytesIO()
     image.save(buffer, format="png")
@@ -130,7 +149,8 @@ if st.session_state["images"]:
     cols = form.columns(total_images)
     for col, image in zip(cols, st.session_state["images"]):
         input_img = Image.open(image)
-        col.image(input_img, width=128)
+        input_img = crop_image(input_img, size=512)
+        col.image(input_img)
     if form.form_submit_button("OctoMerge!"):
         octomerge(st.session_state["images"], st.session_state["payload"])
 
