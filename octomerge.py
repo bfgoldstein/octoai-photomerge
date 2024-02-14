@@ -114,7 +114,7 @@ index_selected = image_select(
 if index_selected != st.session_state["previous_example_index"]:
     name_selected = list(EXAMPLES.keys())[index_selected]
     st.session_state.update(EXAMPLES[name_selected].copy())
-    st.session_state["payload"] = EXAMPLES["Dissolve"]["payload"]
+    st.session_state["payload"] = EXAMPLES[name_selected]["payload"]
     st.session_state["previous_example_index"] = index_selected
 
 st.write("")
