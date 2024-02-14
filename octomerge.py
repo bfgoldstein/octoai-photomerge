@@ -145,13 +145,14 @@ st.session_state["images"] = st.file_uploader("Upload photos", type=["png", "jpg
 
 if st.session_state["images"]:
     form = st.form(key="form_settings")
+    form.write("Uploaded Images:")
     total_images = len(st.session_state["images"])
     cols = form.columns(total_images)
     for col, image in zip(cols, st.session_state["images"]):
         input_img = Image.open(image)
         input_img = crop_image(input_img, size=512)
         col.image(input_img)
-    if form.form_submit_button("OctoMerge!"):
+    if form.form_submit_button("OctoMerge!", use_container_width=True, type='primary'):
         octomerge(st.session_state["images"], st.session_state["payload"])
 
 
