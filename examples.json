@@ -1,0 +1,50 @@
+{
+    "Dissolve": {
+        "payload": {
+            "prompt": "painting, martius_storm red ominous war [:style of vincent van gogh trigger and leonardo da vinci:0.4] ral-dissolve",
+            "negative_prompt": "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
+            "checkpoint": "RealVisXL",
+            "loras": {
+                "asset_01hpkb1m7xfhfb8pj0z5dv7ghk": 1.0
+            },
+            "width": 1024,
+            "height": 1024,
+            "num_images": 4,
+            "sampler": "DPM_PLUS_PLUS_2M_KARRAS",
+            "steps": 20,
+            "cfg_scale": 7
+        }
+    },
+    "WowifierXL": {
+        "payload": {
+            "prompt": "an award winning photograph of a person trigger, halo, intricate cyberpunk robot, highly detailed, soft bokeh Deep space nebula background, art by mooncryptowow and popular science",
+            "negative_prompt": "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
+            "checkpoint": "RealVisXL",
+            "loras": {
+                "asset_01hpkb2j6te55tmna0w5ewb61z": 1.0
+            },
+            "width": 1024,
+            "height": 1024,
+            "num_images": 4,
+            "sampler": "DPM_PLUS_PLUS_2M_KARRAS",
+            "steps": 20,
+            "cfg_scale": 7
+        }
+    },
+    "Frosted": {
+        "payload": {
+            "prompt": "FrostedStyle, up close photo of a fierce and beautiful snow royal trigger, blue and white hair, frosted lips, wearing a frozen transparent glass fur coat, beautiful detailed high quality crown, realistic eyes, up close, bokeh, 4k, HDR",
+            "negative_prompt": "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
+            "checkpoint": "RealVisXL",
+            "loras": {
+                "asset_01hpkb3mjme5vs6qq70g8z8d7e": 1.0
+            },
+            "width": 1024,
+            "height": 1024,
+            "num_images": 4,
+            "sampler": "DPM_PLUS_PLUS_2M_KARRAS",
+            "steps": 20,
+            "cfg_scale": 5
+        }
+    }
+}
