@@ -5,7 +5,7 @@
             "negative_prompt": "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
             "checkpoint": "RealVisXL",
             "loras": {
-                "asset_01hpkb1m7xfhfb8pj0z5dv7ghk": 1.0
+                "asset_01hnxjqnydf02sjagd5xwntef3": 1.0
             },
             "width": 1024,
             "height": 1024,
@@ -21,7 +21,7 @@
             "negative_prompt": "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
             "checkpoint": "RealVisXL",
             "loras": {
-                "asset_01hpkb2j6te55tmna0w5ewb61z": 1.0
+                "asset_01hnxkhw97fgkvwypxrv938bd3": 1.0
             },
             "width": 1024,
             "height": 1024,
@@ -37,7 +37,7 @@
             "negative_prompt": "(asymmetry, worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), open mouth",
             "checkpoint": "RealVisXL",
             "loras": {
-                "asset_01hpkb3mjme5vs6qq70g8z8d7e": 1.0
+                "asset_01hnxqrhh2ephb0g294a9gmdn0": 1.0
             },
             "width": 1024,
             "height": 1024,
@@ -45,6 +45,24 @@
             "sampler": "DPM_PLUS_PLUS_2M_KARRAS",
             "steps": 20,
             "cfg_scale": 5
+        }
+    },
+    "Double_Exposure": {
+        "payload": {
+            "prompt": "split head and body trigger, cyborg inside, cyberpunk city in the background, inkpunk, double exposure, colorful neon lights, misc (masterpiece:1.2), best quality, (hyperdetailed, highest detailed:1.2), high resolution textures",
+            "negative_prompt": "(low quality, bad quality, worst quality:1.2)",
+            "checkpoint": "asset_01hpmgjmq8e1htejmhprkf7g1q",
+            "loras": {
+                "asset_01hpmgkrrcepc9czg5x0ytkp0s": 1.0,
+                "asset_01hpmckz6keh7bgpcrj4zx2y1y": 2.0,
+                "asset_01hpmgpmmqe1eb6gc545rrb1sb": 0.7
+            },
+            "width": 1024,
+            "height": 1024,
+            "num_images": 4,
+            "sampler": "DPM_PLUS_PLUS_2M_KARRAS",
+            "steps": 30,
+            "cfg_scale": 4
         }
     }
 }
